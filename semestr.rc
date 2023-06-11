@@ -1,0 +1,382 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Polish resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_PLK)
+#ifdef _WIN32
+LANGUAGE LANG_POLISH, SUBLANG_DEFAULT
+#pragma code_page(1250)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#include ""res\\semestr.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""     // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\semestr.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ADD DIALOGEX 0, 0, 192, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dodaj element do bazy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,110,50,14
+    PUSHBUTTON      "Anuluj",IDCANCEL,105,110,50,14
+    LTEXT           "Indeks :",IDC_STATIC,21,10,27,8
+    EDITTEXT        IDC_EDIT1,51,5,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nazwa :",IDC_STATIC,21,25,27,8
+    EDITTEXT        IDC_EDIT2,51,20,135,14,ES_AUTOHSCROLL
+    LTEXT           "Cena :",IDC_STATIC,25,40,22,8
+    EDITTEXT        IDC_EDIT3,51,35,65,14,ES_AUTOHSCROLL
+    LTEXT           "Iloœæ :",IDC_STATIC,25,55,20,8
+    EDITTEXT        IDC_EDIT4,51,50,55,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,105,50,10,15
+    EDITTEXT        IDC_EDIT5,51,65,135,35,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Komentarz :",IDC_STATIC,5,80,40,8
+    LTEXT           "z³",IDC_STATIC,120,40,8,8
+END
+
+IDD_DIALOG_SHOW DIALOGEX 0, 0, 192, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wyniki wyszukiwania"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,110,50,14
+    PUSHBUTTON      "Anuluj",IDCANCEL,105,110,50,14
+    LTEXT           "Indeks :",IDC_STATIC,21,10,27,8
+    EDITTEXT        IDC_EDIT1,90,5,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nazwa :",IDC_STATIC,21,25,27,8
+    EDITTEXT        IDC_EDIT2,51,20,135,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Cena :",IDC_STATIC,25,40,22,8
+    EDITTEXT        IDC_EDIT3,51,35,65,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Iloœæ :",IDC_STATIC,25,55,20,8
+    EDITTEXT        IDC_EDIT4,51,50,55,14,ES_AUTOHSCROLL | ES_READONLY
+    EDITTEXT        IDC_EDIT5,51,65,135,40,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_HSCROLL
+    LTEXT           "Komentarz :",IDC_STATIC,5,80,40,8
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,130,5,10,14
+END
+
+IDD_DIALOG_LIST DIALOGEX 0, 0, 317, 186
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Listowanie bazy"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,135,165,50,14
+END
+
+IDD_DIALOG_EDIT DIALOGEX 0, 0, 192, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Edytowanie pozycji"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,41,110,50,14
+    PUSHBUTTON      "Anuluj",IDCANCEL,105,110,50,14
+    LTEXT           "Indeks :",IDC_STATIC,21,10,27,8
+    EDITTEXT        IDC_EDIT1,90,5,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Nazwa :",IDC_STATIC,21,25,27,8
+    EDITTEXT        IDC_EDIT2,51,20,135,14,ES_AUTOHSCROLL
+    LTEXT           "Cena :",IDC_STATIC,25,40,22,8
+    EDITTEXT        IDC_EDIT3,51,35,65,14,ES_AUTOHSCROLL
+    LTEXT           "Iloœæ :",IDC_STATIC,25,55,20,8
+    EDITTEXT        IDC_EDIT4,51,50,55,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT5,51,65,135,35,ES_MULTILINE | ES_AUTOHSCROLL | ES_WANTRETURN
+    LTEXT           "Komentarz :",IDC_STATIC,5,80,40,8
+    CONTROL         "",IDC_SPIN1,"msctls_updown32",UDS_ARROWKEYS,130,5,10,14
+    CONTROL         "",IDC_SPIN2,"msctls_updown32",UDS_ARROWKEYS,115,35,10,14
+    CONTROL         "",IDC_SPIN3,"msctls_updown32",UDS_ARROWKEYS,105,50,10,14
+    PUSHBUTTON      "Usuñ",IDC_BUTTON1,135,45,50,14
+END
+
+IDD_DIALOG_SEARCH DIALOGEX 0, 0, 282, 166
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Wyszukiwanie rekordów"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    PUSHBUTTON      "Zamknij",IDCANCEL,145,135,50,14
+    LTEXT           "Szukany fragment nazwy :",IDC_STATIC,5,5,86,8
+    EDITTEXT        IDC_EDIT1,95,0,125,14,ES_AUTOHSCROLL
+    CONTROL         "u¿yj",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,225,5,29,10
+    LTEXT           "Cena :",IDC_STATIC,35,40,22,8
+    LTEXT           "Przy wyszukiwaniu fragmentu nazwy rozró¿niana jest wielkoœæ liter.",IDC_STATIC,30,20,216,8
+    EDITTEXT        IDC_EDIT2,40,90,30,14,ES_AUTOHSCROLL
+    CONTROL         "konkretnej wartoœci",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | WS_GROUP,20,60,79,10
+    CONTROL         "wartoœci z zakresu",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,20,70,75,10
+    GROUPBOX        "szukaj...",IDC_STATIC,15,50,85,35
+    EDITTEXT        IDC_EDIT3,20,110,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,60,110,30,14,ES_AUTOHSCROLL
+    CTEXT           "-",IDC_STATIC,51,113,8,8
+    LTEXT           "Iloœæ :",IDC_STATIC,190,40,20,8
+    EDITTEXT        IDC_EDIT4,195,90,30,14,ES_AUTOHSCROLL
+    CONTROL         "konkretnej wartoœci",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON | WS_GROUP,175,60,79,10
+    CONTROL         "wartoœci z zakresu",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,175,70,75,10
+    GROUPBOX        "szukaj...",IDC_STATIC,170,50,85,35
+    EDITTEXT        IDC_EDIT7,175,110,30,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,215,110,30,14,ES_AUTOHSCROLL
+    CTEXT           "-",IDC_STATIC,206,113,8,8
+    PUSHBUTTON      "Szukaj",IDC_BUTTON1,90,135,50,14
+    CONTROL         "u¿yj",IDC_CHECK2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,40,29,10
+    CONTROL         "u¿yj",IDC_CHECK3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,210,40,29,10
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_ADD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_SHOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 310
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_DIALOG_EDIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 185
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+
+    IDD_DIALOG_SEARCH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 275
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Polish resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "O programie"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,14,14,20,20
+    LTEXT           "DB : Daniel's Base",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Daniel Kozar, 2009, PWr INF EKA",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_SEMESTR_DIALOG DIALOGEX 0, 0, 137, 130
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "DB : Daniel's Base"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "Dodaj",IDC_BUTTON1,15,30,50,14
+    PUSHBUTTON      "Edytuj",IDC_BUTTON2,75,30,50,14
+    PUSHBUTTON      "Pokaz wszystkie",IDC_BUTTON3,15,50,50,20,BS_MULTILINE
+    PUSHBUTTON      "Szukaj",IDC_BUTTON4,75,55,50,14
+    PUSHBUTTON      "Wczytaj z pliku",IDC_BUTTON5,15,80,50,20,BS_MULTILINE
+    EDITTEXT        IDC_EDIT1,90,5,40,14,ES_AUTOHSCROLL | ES_READONLY
+    LTEXT           "Przedmiotów w bazie : ",IDC_STATIC,15,10,74,8
+    PUSHBUTTON      "Wyjdz",IDCANCEL,45,110,50,14
+    PUSHBUTTON      "Zapisz do pliku",IDC_BUTTON8,75,80,50,20,BS_MULTILINE
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_SEMESTR_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 130
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 123
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,0
+ PRODUCTVERSION 1,0,0,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "Comments", "A fast, portable database system."
+            VALUE "CompanyName", "Kozar Industries"
+            VALUE "FileDescription", "Executable file for the Daniel's Base, a fast and portable database system."
+            VALUE "FileVersion", "1.0 final"
+            VALUE "InternalName", "semestr.exe"
+            VALUE "LegalCopyright", "public domain"
+            VALUE "OriginalFilename", "semestr.exe"
+            VALUE "ProductName", "DB : Daniel's Base"
+            VALUE "ProductVersion", "1.0 final"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "&O programie..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#include "res\semestr.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"     // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
